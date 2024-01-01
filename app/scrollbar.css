@@ -1,0 +1,18 @@
+/* unocss-preset-scrollbar doesn't work correctly. */
+html {
+  scrollbar-color: rgb(var(--un-preset-theme-colors-secondary))
+    rgb(var(--un-preset-theme-colors-background));
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--un-preset-theme-colors-secondary));
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgb(var(--un-preset-theme-colors-background));
+  border-radius: 4px;
+}

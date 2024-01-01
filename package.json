@@ -1,0 +1,40 @@
+{
+  "name": "keyboard.",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm css && remix build",
+    "dev": "concurrently \"unocss \"app/**/*.tsx\" --out-file=\"app/uno.css\" --watch\" \"remix dev\"",
+    "css": "unocss app/**/*.tsx --out-file=app/uno.css",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.0.0",
+    "@remix-run/react": "^2.0.0",
+    "@remix-run/serve": "^2.0.0",
+    "@unocss/reset": "^0.58.1",
+    "@vercel/remix": "^2.0.0",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@iconify-json/ant-design": "^1.1.13",
+    "@remix-run/dev": "^2.0.0",
+    "@remix-run/eslint-config": "^2.0.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@unocss/cli": "^0.58.1",
+    "@unocss/preset-attributify": "^0.58.2",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.38.0",
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.1",
+    "unocss-preset-theme": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
