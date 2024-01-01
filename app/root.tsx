@@ -142,14 +142,14 @@ export default function App() {
         bg="background"
         transition="all"
         text="text"
-        className="min-h-100svh flex flex-col"
+        className="min-h-[100svh] flex flex-col"
       >
         <ThemeContext.Provider value={theme}>
           <main
             flex="~ grow col"
             justify="center"
             items="center"
-            className="min-h-100svh"
+            className="min-h-[100svh]"
           >
             <Outlet />
           </main>

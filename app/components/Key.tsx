@@ -26,7 +26,7 @@ export function Space({ multiplier, size }: SpaceProps) {
         height: multiplier,
         maxWidth: `calc(50px * ${size})`,
       }}
-      className="max-h-50px"
+      className="max-h-[50px]"
     />
   );
 }
@@ -58,7 +58,7 @@ export function Key({
       items="center"
       select="none"
       // 50 - 4 = 46
-      className={`max-h-46px leading-none hover:cursor-pointer transition-all ${
+      className={`max-h-[46px] leading-none hover:cursor-pointer transition-all ${
         active ? "opacity-25" : ""
       } ${checked ? "bg-primary text-background" : "bg-secondary"}`}
       hover:opacity="50"

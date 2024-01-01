@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "pnpm css && remix build",
+    "build": "npm run css && remix build",
     "dev": "concurrently \"unocss \"app/**/*.tsx\" --out-file=\"app/uno.css\" --watch\" \"remix dev\"",
-    "css": "unocss app/**/*.tsx --out-file=app/uno.css",
+    "css": "unocss \"app/**/*.tsx\" --out-file=\"app/uno.css\"",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
