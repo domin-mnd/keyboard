@@ -17,9 +17,6 @@ dependencies:
   '@unocss/reset':
     specifier: ^0.58.1
     version: 0.58.1
-  '@vercel/analytics':
-    specifier: ^1.0.2
-    version: 1.1.1
   '@vercel/remix':
     specifier: ^2.0.0
     version: 2.4.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
@@ -67,9 +64,6 @@ devDependencies:
   unocss:
     specifier: ^0.58.1
     version: 0.58.1(postcss@8.4.32)(vite@4.5.1)
-  unocss-preset-scrollbar:
-    specifier: ^0.3.0
-    version: 0.3.0(unocss@0.58.1)
   unocss-preset-theme:
     specifier: ^0.12.0
     version: 0.12.0(@unocss/core@0.58.2)
@@ -1690,22 +1684,12 @@ packages:
       unconfig: 0.3.11
     dev: true
 
-  /@unocss/core@0.56.5:
-    resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
-    dev: true
-
   /@unocss/core@0.58.1:
     resolution: {integrity: sha512-sr9V3hMn5DftVcA3JLTanbUZTW2OW1oez5y0pAmTGsq6LnjFgWz+VzIV4Wa4kCGcN59lGTuqq3Ni2bPzTmxAqQ==}
     dev: true
 
   /@unocss/core@0.58.2:
     resolution: {integrity: sha512-TYU6IRgnsZGVXpca6FYuXa3iJ1zI3hxgRhnb7TwE9j5t2GY4a/mjvg0K3MdiC8rzPP5hWWd9NXivBfJsr1SQpQ==}
-    dev: true
-
-  /@unocss/extractor-arbitrary-variants@0.56.5:
-    resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
-    dependencies:
-      '@unocss/core': 0.56.5
     dev: true
 
   /@unocss/extractor-arbitrary-variants@0.58.1:
@@ -1760,14 +1744,6 @@ packages:
       - supports-color
     dev: true
 
-  /@unocss/preset-mini@0.56.5:
-    resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
-    dependencies:
-      '@unocss/core': 0.56.5
-      '@unocss/extractor-arbitrary-variants': 0.56.5
-      '@unocss/rule-utils': 0.56.5
-    dev: true
-
   /@unocss/preset-mini@0.58.1:
     resolution: {integrity: sha512-p3wCEY711uwkvxHPJcRXNXIM6cy5wbSX0VDrjOvqh4+aXncAax/8xwuH+otHSeoVbwJUMqaTknUefkQcqjKJZg==}
     dependencies:
@@ -1815,13 +1791,6 @@ packages:
 
   /@unocss/reset@0.58.1:
     resolution: {integrity: sha512-WrvXIBtysI2CZHPwQfYzWoolAPq9WVrf9SBMwpnflGWLXqYF+f1Vz9VzuT97Nwhy9ULtSERquWjiWI2W44Dk3g==}
-
-  /@unocss/rule-utils@0.56.5:
-    resolution: {integrity: sha512-CXIGHCIC9B8WUl9KbbFMSZHcsIgfmI/+X0bjBv6xrgBVC1EQ2Acq4PYnJIbaRGBRAhl9wYjNL7Zq2UWOdowHAw==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@unocss/core': 0.56.5
-    dev: true
 
   /@unocss/rule-utils@0.58.1:
     resolution: {integrity: sha512-6lzEqHa0OhyadOsTn7darXhQxp0RBkvHhCeBQJn9wksTjZkxKFi/X3zEHf3GMrbXRZ6DNEMgn5KTti9fohVsNg==}
@@ -1946,12 +1915,6 @@ packages:
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
     dev: true
-
-  /@vercel/analytics@1.1.1:
-    resolution: {integrity: sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==}
-    dependencies:
-      server-only: 0.0.1
-    dev: false
 
   /@vercel/remix@2.4.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
     resolution: {integrity: sha512-Wq3WlaHQmqjWyzEuf8iJENajhTd6GMOqwa9Os7BcfA2HgyJkKWhslsewkj1wrPmKfxLvR0GTxH9RFfRvz0ivpg==}
@@ -5948,10 +5911,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /server-only@0.0.1:
-    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
-    dev: false
-
   /set-cookie-parser@2.6.0:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
 
@@ -6525,15 +6484,6 @@ packages:
   /universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
-    dev: true
-
-  /unocss-preset-scrollbar@0.3.0(unocss@0.58.1):
-    resolution: {integrity: sha512-7ul5AhttNoPwXPVFRKeze7beLF2hItg4f2drl5jcdzhv2MQgxo0CcCmT8qGe8VtBrAk/7RaGutQLTiMrGC6oNQ==}
-    peerDependencies:
-      unocss: '>= 0.31.13 < 1'
-    dependencies:
-      '@unocss/preset-mini': 0.56.5
-      unocss: 0.58.1(postcss@8.4.32)(vite@4.5.1)
     dev: true
 
   /unocss-preset-theme@0.12.0(@unocss/core@0.58.2):
