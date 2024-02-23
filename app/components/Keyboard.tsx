@@ -89,6 +89,10 @@ export const Keyboard = forwardRef<KeyboardHandle, KeyboardProps>(
         // Contents define what will be inside the key
         let contents: ReactNode = key.key;
 
+        // e.g. key 1 with ! as alternative value
+        if (Array.isArray(key.key))
+          contents = <Combined multiplier={multiplier} keys={key.key} />;
+
         // e.g. "escape", "enter"
         if (key.display && "label" in key.display)
           contents = (
@@ -98,10 +102,6 @@ export const Keyboard = forwardRef<KeyboardHandle, KeyboardProps>(
         // e.g. arrow keys
         if (key.display && "icon" in key.display)
           contents = <Icon icon={key.display.icon} />;
-
-        // e.g. key 1 with ! as alternative value
-        if (Array.isArray(key.key))
-          contents = <Combined multiplier={multiplier} keys={key.key} />;
 
         // Key in a horizontal row
         return (

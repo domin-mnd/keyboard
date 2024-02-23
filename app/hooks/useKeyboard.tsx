@@ -83,7 +83,7 @@ export function useKeyboard() {
         display: { label: "scroll\nlock" },
       },
       {
-        key: "PAUSE",
+        key: ["MEDIAPLAYPAUSE", "PAUSE"],
         size: 1,
         empty: false,
         display: { label: "pause" },
